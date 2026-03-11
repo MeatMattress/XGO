@@ -58,5 +58,8 @@ Videos/
 __pycache__/
 *.pyc
 
+# Environment/secrets
+.env
+
 # Misc
 *.log

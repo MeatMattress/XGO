@@ -9,9 +9,11 @@ from key import Button
 import threading
 import json,base64
 import openai
+from dotenv import load_dotenv
+load_dotenv(os.path.expanduser("~/.env"))
 os.environ["http_proxy"] = "http://192.168.0.104:7890"
 os.environ["https_proxy"] = "http://192.168.0.104:7890"
-openai.api_key = "YOUR_OPENAI_API_KEY"
+openai.api_key = os.getenv("OPENAI_API_KEY_CHATGPT")
 
 import pyaudio
 import wave

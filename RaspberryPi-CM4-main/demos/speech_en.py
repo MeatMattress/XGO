@@ -29,10 +29,12 @@ import numpy as np
 from scipy import fftpack
 '''
 import openai
+from dotenv import load_dotenv
+load_dotenv(os.path.expanduser("~/.env"))
 
 os.environ["http_proxy"] = "http://192.168.214.203:7890"
 os.environ["https_proxy"] = "http://192.168.214.203:7890"
-openai.api_key = "YOUR_OPENAI_API_KEY"
+openai.api_key = os.getenv("OPENAI_API_KEY_SPEECH")
 '''
 STATUS_FIRST_FRAME = 0  
 STATUS_CONTINUE_FRAME = 1  
