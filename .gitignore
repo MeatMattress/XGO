@@ -1,0 +1,62 @@
+# Large build/installed directories
+opencv/
+opencv_contrib/
+Edublocks/
+
+# System/package caches
+.cache/
+.local/
+.config/
+.npm/
+.yarn/
+.yarnrc
+
+# Model files (large binaries)
+model/
+*.tflite
+*.caffemodel
+*.h5
+*.onnx
+*.pb
+*.pt
+*.weights
+
+# Keep small config/text .pb files tracked via force-add if needed
+# But exclude binary model .pb files by default
+
+# System/desktop files
+.dbus/
+.cups/
+.vnc/
+.presage/
+.pp_backup/
+.ipython/
+.keras/
+.mplayer/
+.edublocks/
+
+# Session/history files
+.bash_history
+.python_history
+.viminfo
+.Xauthority
+.xsession-errors
+.xsession-errors.old
+.claude/
+.claude.json
+
+# Empty default directories
+Documents/
+Downloads/
+Music/
+Pictures/
+Public/
+Templates/
+Videos/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Misc
+*.log

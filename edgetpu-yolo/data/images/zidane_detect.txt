@@ -1,0 +1,13 @@
+{
+ "./data/images/zidane_detect": {
+  "box": [
+   721.0,
+   32.0,
+   1186.0,
+   720.0
+  ],
+  "conf": 0.7150825262069702,
+  "cls": 0.0,
+  "cls_name": "person"
+ }
+}

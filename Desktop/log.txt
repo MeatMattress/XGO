@@ -1,0 +1,4 @@
+display = LCD_2inch.LCD_2inch()
+display.clear()
+splash = Image.new("RGB", (display.height, display.width ),"black")
+display.ShowImage(splash)
